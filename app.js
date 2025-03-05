@@ -18,9 +18,9 @@ app.use(orderRouter);
 app.use(profilePictureRouter);
 app.use('/auth',router)
 
-app.get('/', (req, res => {
-    res.send('Server is running')
-}))
+app.get('/', (req, res) => {
+    res.send('Server is running');
+})
 const port = 3001;
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
